@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(18, 46, 43);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: rgb(45, 157, 146);
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Logo (Image) styling */
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px; /* Space between image and text */
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+
+   
+    .header-content h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+
+.header-content .tagline {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.2;
+   
+}
+
+}
+
+
+  
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 46, 43);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            margin-top: 100px;
+        }
+
+        .container {
+           
+            margin-top: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color:rgb(18, 46, 43);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: rgb(13, 94, 86);
+            color: white;
+            padding: 10px 0;
+
+            display: flex;
+    align-items: center;
+    justify-content: center;
+        }
+
+        header img.logo {
+            display: block;
+            margin: 0 auto;
+
+            width: 150px; /* Adjust the width as necessary */
+    height: auto;
+    margin-left: 0px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin: 30; /* Remove default margin */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: right; /* Center items horizontally */
+        }
+
+       
+
+     
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="ikiraro.png" alt="Ikiraro logo" class="logo">
+            <h1 style="color:#4CAF50">IKIRARO</h1>
+            
+           
+        </div>
+    </header>
+<!--<br><br><br><br>-->
+
+<div class="container">
+    <h2>Create Account</h2>
+    <form id="createAccountForm" action="account.php" method="post">
+        
+        <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="Phone Number" required>
+        <select id="continent" name="continent" required>
+            <option value="">Select Continent</option>
+            <option value="Africa">Africa</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Australia">Australia</option>
+            <option value="Antarctica">Antarctica</option>
+        </select>
+        <input type="text" id="country" name="country" placeholder="Country" required>
+        <input type="text" id="city" name="city" placeholder="City" required>
+        <input type="text" id="idcard" name="idcard" pattern="[0-9]{16}" placeholder="ID Number" required>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" required>
+        <button type="submit">Create Account</button>
+        <p class="error" id="errorMessage"></p>
+    </form>
+    <section>
+        <center>
+            <a href="index.html"><button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Back</button></a>
+        </center>
+    </section>
+</div>
+
+
+
+
+</body>
+</html>

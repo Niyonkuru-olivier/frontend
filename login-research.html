@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login User</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <!--<div class="header-content">
+            <img src="ikiraro.png" alt="Ikiraro logo" class="logo">
+            <h1 style="color:#4CAF50; ">IKIRARO</h1>
+        -->
+        <table style="width: 100%; border: none;">
+            <tr>
+                <td style="width: 100px; border: none;">
+                    <img src="ikiraro.png" alt="Ikiraro logo" class="logo" style="width: 100%;">
+                </td>
+                <td style="border: none;">
+                    <h1 style="color:rgb(18, 46, 43); text-align: left;">IKIRARO</h1>
+                </td>
+                <td style="border: none;">
+                    <h1 style="color:rgb(18, 46, 43); text-align: left;">IKIRARO</h1>
+                </td>
+                <td style="border: none;">
+                    <h1 style="color:rgb(18, 46, 43); text-align: left;">IKIRARO</h1>
+                </td>
+                <td style="border: none;">
+                    <h1 style="color:#4CAF50; text-align: left;">IKIRARO</h1>
+                </td>
+            </tr>
+        </table>
+           
+        </div>
+        <marquee><h1>Login as Researcher/Experts</h1></marquee>
+    </header>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()" action="login.php" method="GET">
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Enter your phone number" required>
+           
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+    <div>
+        <center>
+            <a href="index.html"><button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Back</button></a>
+        </center>
+    </div>
+    <script src="login-research.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maize Market Database</title>
+  <link rel="stylesheet" href="market.css">
+</head>
+<body>
+  <h1>Maize Market Prices</h1>
+  <div>
+    <label for="search">Search for Year(between 2020-2024):</label>
+    <input type="text" id="search" placeholder="Enter region or date">
+    <button onclick="searchPrices()">Search</button>
+  </div>
+  <table id="prices-table">
+    <!-- Table to display searchable data -->
+  </table>
+  <canvas id="price-chart"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="market.js"></script>
+
+  <div>
+    <center>
+        <a href="index.html"><button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Back</button></a>
+    </center>
+</div>
+</body>
+</html>

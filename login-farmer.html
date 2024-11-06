@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login User</title>
+    <link rel="stylesheet" href="login.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+    <header>
+        <table style="width: 100%; border: none;">
+            <tr>
+                <td style="width: 100px; border: none;">
+                    <img src="ikiraro.png" alt="Ikiraro logo" class="logo" style="width: 100%;">
+                </td>
+                <td colspan="4" style="border: none;">
+                    <h1 style="color:rgb(18, 46, 43); text-align: left;">IKIRARO</h1>
+                </td>
+            </tr>
+        </table>
+        <marquee><h1>Login as Farmer</h1></marquee>
+    </header>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()" action="login.php" method="POST">
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="Enter your phone number" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit">Login</button> <!-- The form will submit on this button -->
+        </form>
+        <p id="error-message"></p>
+    </div>
+    <div>
+        <center>
+            <a href="index.html"><button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Back</button></a>
+        </center>
+    </div>
+
+    <!-- Optional: You can link your JavaScript file for form validation -->
+    <script src="login-farmer.js"></script> 
+</body>
+</html>
